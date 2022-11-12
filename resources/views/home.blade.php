@@ -39,7 +39,7 @@
                     <div class="col-md-12">
                     </div>
                     <div class="row card">
-                        <form action="{{route('user.update',['user'=>Auth::user()->id])}}" method="POST" class=" p-5"
+                        <form action="{{route('user.update',['user'=>Auth::user()->id ?? ''])}}" method="POST" class=" p-5"
                             enctype="multipart/form-data">
                             @csrf
                             <div class="row text-right">
