@@ -99,7 +99,7 @@ Route::post('/register/admin', 'Auth\RegisterController@createAdmin')->name('reg
 Route::post('/register/livreur', 'Auth\RegisterController@createLivreur')->name('register.Livreur');
 
 
-Route::get('/home', 'HomeController@index')->name('home')->middleware('lang');
+Route::get('/home', 'HomeController@index')->name('home')->middleware('auth');
 Route::get('/logout', 'HomeController@logout')->name('_logout')->middleware('lang');
 // Route::get('/home', 'HomeController@index')->name('home');
 

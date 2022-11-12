@@ -31,6 +31,10 @@ class UserController extends Controller
     public function store(Request $request)
     {
     
+        $validated = $request->validate([
+            'email'=>'unique'
+        ]);
+
 
         $user = new User();
         $user->name = $request->get('nom');
@@ -50,7 +54,7 @@ class UserController extends Controller
         $user->password_text = $request->get('password');
 
         $user->save();
-        return redirect()->route('home');
+        return redirect()->route('login');
     }  
     public function edit($id_user)
     {
