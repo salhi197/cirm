@@ -294,7 +294,7 @@
 
 <script>
 
-function watchWilayaChanges() {
+        function watchWilayaChanges() {
 
             $('#wilaya_select').on('change', function (e) {
 
