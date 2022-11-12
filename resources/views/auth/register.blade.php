@@ -308,7 +308,7 @@ function watchWilayaChanges() {
 
                     method: "GET",
 
-                    url: "/cirm/api/static/communes/ " + $(this).val()
+                    url: "/api/static/communes/ " + $(this).val()
 
                 })
                     .done(function (response) {
