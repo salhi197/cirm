@@ -24,7 +24,7 @@
         --animation-custom_in-opacity: 0;
         --animation-custom_in-rotate: 0deg;
         --animation-custom_in-scale: 1;
-        width: 200px;
+        width: 678px;
     }
 }
 
@@ -72,10 +72,10 @@
 .u-section-2 .u-text-1 {
     margin-bottom: 0;
     margin-top: 5px;
-    font-family: JannaLT-Regular;
-    font-size: 1.5rem;
+    font-family: cairo;
+    font-size: 1.1rem;
     background-image: none;
-    font-weight: 700;
+    font-weight: 400;
 }
 
 .u-section-2 .u-image-1 {
@@ -229,11 +229,12 @@
 }
 
 .u-section-4 .u-text-1 {
-    font-family: JannaLT-Regular;
+    font-family: Al-Jazeera-Arabic-Regular;
     background-image: none;
     font-size: 3rem;
-    font-weight: 700;
+    font-weight: 400;
     margin: 54px 0 0;
+    color: #37414d;
 }
 
 .u-section-4 .u-list-1 {
@@ -267,9 +268,9 @@
 .u-section-4 .u-text-2 {
     letter-spacing: normal;
     text-transform: none;
-    font-size: 1.875rem;
+    font-size: 1.5rem;
     font-family: hanimation-regular;
-    font-weight: 700;
+    font-weight: 500;
     margin: 13px auto 0;
 }
 
@@ -294,10 +295,10 @@
 
 .u-section-4 .u-text-3 {
     letter-spacing: normal;
-    font-size: 1.875rem;
     text-transform: none;
+    font-size: 1.5rem;
     font-family: hanimation-regular;
-    font-weight: 700;
+    font-weight: 500;
     margin: 13px auto 0;
 }
 
@@ -322,10 +323,10 @@
 
 .u-section-4 .u-text-4 {
     letter-spacing: normal;
-    font-size: 1.875rem;
     text-transform: none;
+    font-size: 1.5rem;
     font-family: hanimation-regular;
-    font-weight: 700;
+    font-weight: 500;
     margin: 13px auto 0;
 }
 

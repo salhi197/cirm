@@ -19,8 +19,8 @@
                         }
                         
                         .logo {
-                            width: 80px;
-                            height: 80px;
+                            width: 500px;
+                            height: 500px;
                             position: absolute;
                             left: 50%;
                             transform: translateX(-50%);
@@ -31,7 +31,7 @@
                             align-items: center;
                         }
                         
-                        .titre1 h1 {
+                        .titre1 h2 {
                             font-family: cairo;
                             font-size: 13px;
                             font-weight: 400;
@@ -41,7 +41,7 @@
                             letter-spacing: 1.5px;
                         }
                         
-                        .titre2 h1 {
+                        .titre2 h2 {
                             font-family: cairo;
                             color: white;
                             text-align: center;

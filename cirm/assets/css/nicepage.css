@@ -7,14 +7,155 @@
  * Copyright 2014-2021 Froala Labs
  */
 
-* {
-    font-family: 'JannaLT-Regular';
-}
-
 
 /* body{
     font-family: JannaLT-Regular !important;
  } */
+
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800;900;1000&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Cairo:wght@200;300;400;500;600;700;800&display=swap');
+* {
+    font-family: 'cairo';
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    text-decoration: none;
+    list-style: none;
+    box-sizing: border-box;
+}
+
+header {
+    background-color: rgb(55, 65, 77);
+    height: 145px;
+    padding-top: 10px;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+}
+
+.logo {
+    width: 220px;
+    height: 150px;
+    position: absolute;
+    left: 50%;
+    transform: translateX(-50%);
+}
+
+.logo img {
+    width: 100%;
+    align-items: center;
+}
+
+.titre1 h1 {
+    font-family: cairo;
+    font-size: 13px;
+    font-weight: 400;
+    color: white;
+    text-align: center;
+    padding-top: 80px;
+    letter-spacing: 1.5px;
+}
+
+.titre2 h1 {
+    font-family: cairo;
+    color: white;
+    text-align: center;
+    font-weight: 400;
+    font-size: 12px;
+    letter-spacing: 1px;
+}
+
+nav {
+    height: 50px;
+    width: 100%;
+    margin: 0;
+}
+
+.logo2 img {
+    width: 60px;
+    padding-top: 5px;
+    line-height: 80px;
+    float: right;
+    margin-right: 250px;
+}
+
+nav ul {
+    float: left;
+    margin-left: 150px;
+}
+
+nav li {
+    display: inline-block;
+    margin: 0 15px;
+    margin-top: -30px;
+    line-height: 30px;
+    text-decoration: none;
+}
+
+nav a {
+    color: #37414d;
+    font-size: 15px;
+    font-family: cairo;
+    border-bottom: 1px solid transparent;
+}
+
+a.active,
+a:hover {
+    border-bottom: 2px solid #de2424;
+    transition: .5s;
+}
+
+
+/*banner*/
+
+.banner {
+    position: relative;
+    width: 100%;
+    min-height: 40vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: url("../images/12.jpg");
+    background-size: cover;
+    background-position: center;
+    margin-top: -30px;
+}
+
+.banner .content {
+    max-width: 900px;
+    text-align: center;
+}
+
+.banner .content h2 {
+    font-family: cairo;
+    font-size: 40px;
+    font-weight: 600;
+    color: #37414d;
+}
+
+.row {
+    position: relative;
+    width: 100%;
+    display: flex;
+    justify-content: space-between;
+    padding: 25px 0px 0px 180px;
+}
+
+.row .col70 {
+    position: relative;
+    width: 70%;
+}
+
+.row p {
+    text-align: center;
+    /*padding: 50px 50px 50px 0;*/
+    font-family: cairo;
+    font-weight: 500;
+    font-size: 19px;
+}
 
 td {
     padding-right: 4px;
@@ -27,7 +168,7 @@ td {
     border-bottom: 1px solid #e5e5e5;
     position: relative;
     margin-bottom: 30px;
-    font-family: JannaLT-Regular;
+    font-family: cairo;
 }
 
 .single-product-widget .p-sidebar-title::before {
@@ -81,7 +222,7 @@ td {
     display: block;
     overflow: hidden;
     margin-bottom: 10px;
-    font-family: JannaLT-Regular;
+    font-family: cairo;
 }
 
 .p-sidebar-cat ul li:last-child {
@@ -92,7 +233,7 @@ td {
     font-size: 16px;
     color: #7e899d;
     display: block;
-    text-decoration: unset;
+    text-decoration: none;
 }
 
 .p-sidebar-cat ul li a:hover {
@@ -118,7 +259,7 @@ option {
 }
 
 .rtl-text {
-    font-family: JannaLT-Regular;
+    font-family: cairo;
     display: block;
     text-align: right;
     font-weight: 600;
@@ -126,7 +267,7 @@ option {
 }
 
 form>* {
-    font-family: JannaLT-Regular;
+    font-family: cairo;
 }
 
 .form-control {
@@ -351,7 +492,7 @@ form>* {
     background-clip: padding-box;
     background: #f5f5f5;
     padding: 10px;
-    font-family: "Courier New", Courier, monospace;
+    font-family: cairo;
 }
 
 .fr-view .fr-class-transparency {
@@ -729,7 +870,6 @@ template,
 
 a {
     background-color: transparent;
-    -webkit-text-decoration-skip: objects;
 }
 
 a:active,
@@ -739,7 +879,7 @@ a:hover {
 
 abbr[title] {
     border-bottom: none;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 b,
@@ -1632,7 +1772,7 @@ a {
 
 .u-underline,
 .u-underline:hover {
-    text-decoration: underline;
+    text-decoration: none;
     border-bottom-width: 0;
 }
 
@@ -7804,7 +7944,7 @@ ul.u-text li:last-child {
 }
 
 .u-backlink .u-link {
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 .u-backlink span,
@@ -21406,7 +21546,7 @@ blockquote .small:before {
 
 .pswp__error-msg a {
     color: #CCC;
-    text-decoration: underline;
+    text-decoration: none;
 }
 
 
