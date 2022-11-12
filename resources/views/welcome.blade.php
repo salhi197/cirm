@@ -34,10 +34,10 @@
         </label>
         <ul>
             <li>
-                <a href="#">انشاء حساب</a>
+                <a href="{{route('register')}}">انشاء حساب</a>
             </li>
             <li>
-                <a href="#">قدم الشكوى</a>
+            <a href="{{route('register')}}">قدم الشكوى</a>
             </li>
             <li>
                 <a href="#">متابعة شكوى</a>

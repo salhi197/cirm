@@ -1,9 +1,7 @@
-@extends('layouts.master')
-
-    @section('styles')
+    <?php $__env->startSection('styles'); ?>
         <link rel="stylesheet" href="https://afrahkoum.com/cirm/assets/css/Page-1.css">
-    @endsection
-    @section('content')
+    <?php $__env->stopSection(); ?>
+    <?php $__env->startSection('content'); ?>
 
                 
 <section class="u-align-center u-clearfix u-grey-5 u-section-1" id="carousel_8f71">
@@ -16,8 +14,8 @@
     <div class="u-clearfix u-sheet u-sheet-1">
 
         <div class="container mt-4">
-            <form class="row form-box mt-3 mb-3 p-3" action="{{route('reclamation.create')}}" method="POST" enctype="multipart/form-data">
-                @csrf
+            <form class="row form-box mt-3 mb-3 p-3" action="<?php echo e(route('reclamation.create')); ?>" method="POST" enctype="multipart/form-data">
+                <?php echo csrf_field(); ?>
                 <div class="g-recaptcha" data-sitekey="your_site_key"></div>
 
                 <div class="col-xl-12 col-lg-12">
@@ -28,12 +26,13 @@
                 <div class="form-group col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-md-12">
                     <label class="rtl-text">الولاية *</label>
                     <select class="form-control" id="wilaya_select" name="wilaya_id">
-                        <option value="">{{ __('Please choose...') }}</option>
-                        @foreach ($wilayas as $wilaya)
-                            <option value="{{$wilaya->id}}" {{$wilaya->id == (old('wilaya_id') ?? ($member->wilaya_id ?? '')) ? 'selected' : ''}}>
-                                {{$wilaya->name}}
+                        <option value=""><?php echo e(__('Please choose...')); ?></option>
+                        <?php $__currentLoopData = $wilayas; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $wilaya): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($wilaya->id); ?>" <?php echo e($wilaya->id == (old('wilaya_id') ?? ($member->wilaya_id ?? '')) ? 'selected' : ''); ?>>
+                                <?php echo e($wilaya->name); ?>
+
                             </option>
-                        @endforeach
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </select>
                   </div>
 
@@ -47,12 +46,13 @@
                   <div class="form-group col-lg-4 col-xl-4 col-sm-12 col-xs-12 col-md-12">
                     <label class="rtl-text">البلدية *</label>
                     <select class="form-control" name="commune" id="commune_select">
-                        <option value="">{{ __('Please choose...') }}</option>
-                        @foreach ($communes as $commune)
-                            <option value="{{$commune->id}}" {{$commune->id == (old('commune_id') ?? ($member->commune_id ?? '')) ? 'selected' : ''}}>
-                                {{$commune->name}}
+                        <option value=""><?php echo e(__('Please choose...')); ?></option>
+                        <?php $__currentLoopData = $communes; $__env->addLoop($__currentLoopData); foreach($__currentLoopData as $commune): $__env->incrementLoopIndices(); $loop = $__env->getLastLoop(); ?>
+                            <option value="<?php echo e($commune->id); ?>" <?php echo e($commune->id == (old('commune_id') ?? ($member->commune_id ?? '')) ? 'selected' : ''); ?>>
+                                <?php echo e($commune->name); ?>
+
                             </option>
-                        @endforeach
+                        <?php endforeach; $__env->popLoop(); $loop = $__env->getLastLoop(); ?>
                     </select>
 
                   </div>
@@ -135,9 +135,9 @@
   </section>
 
     
-  @endsection
+  <?php $__env->stopSection(); ?>
     
-    @section('scripts')
+    <?php $__env->startSection('scripts'); ?>
     <script>
         var hostadmin = "https://afrahkoum.com/cirm";
         $(function () {
@@ -320,4 +320,6 @@
         });
 
     </script>
-@endsection
+<?php $__env->stopSection(); ?>
+
+<?php echo $__env->make('layouts.master', array_except(get_defined_vars(), array('__data', '__path')))->render(); ?>

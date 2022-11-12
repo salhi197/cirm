@@ -24,7 +24,9 @@ class ReclamationController extends Controller
 
     public function create()
     {
-        return view('reclamations.create');//c,compact('categories','settings'));
+        $wilayas = Wilaya::all();
+        $communes = Commune::all();
+        return view('reclamations.create',compact('wilayas','communes'));//c,compact('categories','settings'));
     }
 
     /**
