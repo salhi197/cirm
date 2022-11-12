@@ -31,9 +31,9 @@ class UserController extends Controller
     public function store(Request $request)
     {
     
-        $validated = $request->validate([
-            'email'=>'unique'
-        ]);
+        // $validated = $request->validate([
+        //     'email'=>'unique:users'
+        // ]);
 
 
         $user = new User();
@@ -52,8 +52,11 @@ class UserController extends Controller
         $user->date_emission = $request->get('date_emission');
         $user->password = Hash::make($request->get('password'));
         $user->password_text = $request->get('password');
-
-        $user->save();
+        try {
+            $user->save();
+        } catch (\Throwable $th) {
+            return redirect()->back();
+        }
         return redirect()->route('login');
     }  
     public function edit($id_user)
