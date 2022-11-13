@@ -61,13 +61,13 @@
                 <a href="#">احصائيات</a>
             </li>
             <li>
-                <a href="#">متابعة شكوى</a>
+                <a href="{{route('register')}}">متابعة شكوى</a>
             </li>
             <li>
-                <a href="#">قدم الشكوى</a>
+                <a href="{{route('register')}}">قدم الشكوى</a>
             </li>
             <li>
-                <a href="#">انشاء حساب</a>
+                <a href="{{route('register')}}">انشاء حساب</a>
             </li>
         </ul>
 
