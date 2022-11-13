@@ -106,12 +106,12 @@
 
                   <div class="form-group col-12"  class=" col-12 row ">
                     <label class="rtl-text">  عنوان الشكوى *</label>
-                   <input type="text"  name="title" minlength="10" name="title"  value=""  class="form-control" required>
+                   <input type="text"  name="title" minlength="1" name="title"  value=""  class="form-control" required>
                   </div>
 
                   <div class="form-group col-12">
                     <label class="rtl-text">الملخص *</label>
-                    <textarea class="form-control" minlength="50" name="description" id="description" rows="3"></textarea>
+                    <textarea class="form-control" minlength="1" name="description" id="description" rows="3"></textarea>
                   </div>
 
                   <div class="form-group col-12">
